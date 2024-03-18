@@ -13,15 +13,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 Domain", "03 Domain", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 Infrastructure", "04 Infrastructure", "{BE844494-AB6E-45CE-A180-C01094E580B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserManagement.Application", "Application\UserManagement.Application\UserManagement.Application.csproj", "{D5334BEF-83F4-4A51-9CEC-48B3D283F72F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserManagement.Application", "Application\UserManagement.Application\UserManagement.Application.csproj", "{D5334BEF-83F4-4A51-9CEC-48B3D283F72F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserManagement.Domain", "Domain\UserManagement.Domain\UserManagement.Domain.csproj", "{D710A53D-67E1-4800-99C0-5435D13F23EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserManagement.Domain", "Domain\UserManagement.Domain\UserManagement.Domain.csproj", "{D710A53D-67E1-4800-99C0-5435D13F23EC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Persistence", "Persistence", "{85DA5EBC-9943-423F-B451-D9CEE4E45351}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserManagement.FluentMigrator", "Infrastructure\Persistence\UserManagement.FluentMigrator\UserManagement.FluentMigrator.csproj", "{F69D2B0F-92C8-46BB-B165-5B440A3CFF68}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserManagement.FluentMigrator", "Infrastructure\Persistence\UserManagement.FluentMigrator\UserManagement.FluentMigrator.csproj", "{F69D2B0F-92C8-46BB-B165-5B440A3CFF68}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserManagement.EFCorePersistence", "Infrastructure\Persistence\UserManagement.EFCorePersistence\UserManagement.EFCorePersistence.csproj", "{90736B8A-8123-4CFE-9203-2EB02716E185}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserManagement.EFCorePersistence", "Infrastructure\Persistence\UserManagement.EFCorePersistence\UserManagement.EFCorePersistence.csproj", "{90736B8A-8123-4CFE-9203-2EB02716E185}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JwtTokenProvider", "Infrastructure\JwtTokenProvider\JwtTokenProvider.csproj", "{F1B06131-2FD6-48A0-BDAE-5FA08614B3F0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +51,10 @@ Global
 		{90736B8A-8123-4CFE-9203-2EB02716E185}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90736B8A-8123-4CFE-9203-2EB02716E185}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90736B8A-8123-4CFE-9203-2EB02716E185}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1B06131-2FD6-48A0-BDAE-5FA08614B3F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1B06131-2FD6-48A0-BDAE-5FA08614B3F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1B06131-2FD6-48A0-BDAE-5FA08614B3F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1B06131-2FD6-48A0-BDAE-5FA08614B3F0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,6 +66,7 @@ Global
 		{85DA5EBC-9943-423F-B451-D9CEE4E45351} = {BE844494-AB6E-45CE-A180-C01094E580B2}
 		{F69D2B0F-92C8-46BB-B165-5B440A3CFF68} = {85DA5EBC-9943-423F-B451-D9CEE4E45351}
 		{90736B8A-8123-4CFE-9203-2EB02716E185} = {85DA5EBC-9943-423F-B451-D9CEE4E45351}
+		{F1B06131-2FD6-48A0-BDAE-5FA08614B3F0} = {BE844494-AB6E-45CE-A180-C01094E580B2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DCED6F8C-678D-4996-A5C0-8604C741E381}
