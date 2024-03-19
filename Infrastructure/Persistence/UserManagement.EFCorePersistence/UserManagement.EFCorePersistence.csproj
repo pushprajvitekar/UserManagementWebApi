@@ -7,10 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="LinqKit.Microsoft.EntityFrameworkCore" Version="8.1.5" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.3" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Application\UserManagement.Application\UserManagement.Application.csproj" />
     <ProjectReference Include="..\..\..\Domain\UserManagement.Domain\UserManagement.Domain.csproj" />
   </ItemGroup>
 

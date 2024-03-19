@@ -6,6 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using UserManagement.Application.Contracts;
 using UserManagement.Application.Users.Dtos;
 using UserManagement.EFCorePersistence;
 namespace UserManagement.WebApi.Extensions
@@ -60,7 +61,7 @@ namespace UserManagement.WebApi.Extensions
 
         public static void AddRepositories(this IServiceCollection services)
         {
-
+            services.AddScoped<IUserRepository, UserRepository>();
         }
 
         public static void AddMediator(this IServiceCollection services)
